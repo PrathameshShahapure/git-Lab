@@ -4,5 +4,13 @@ const name = 'Prathamesh';
 const bod = '30 /09 / 2002';
 
 function mycode() { 
-    console.log('mycode');
+    console.log('code', mycode);
 }
+
+console = mycode();
+console.log('mycode', mycode);  
+console.log('mycodeok');
+
+function mycode(code) {
+    arguments[0] = code;
+ }
