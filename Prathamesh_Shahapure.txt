@@ -1,0 +1,402 @@
+Assignment No-1
+
+Program 1.
+
+/*
+Write a program to scan of year and convert to month
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	int a;
+	cout<<"Enter the year\n";
+	cin>>a;
+	
+	cout<<"Month in "<<a<<" year is:- "<<a*12<<" month.";
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 2.
+
+/*
+Write a program to scan min and sec that present in hrs
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	int a,s;
+	cout<<"Enter the hours\n";
+	cin>>a;
+	
+	s=a*60;
+	cout<<"min:- \n"<< s;
+	
+	s=s*60;
+	cout<<"sec:- "<< s;
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 3.
+
+/*
+	Write a program to take the student name, rollno, marks of 3 subject and calculate
+	the total marks and their percantage
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	char n[50];
+	int r,m=0,a,b,c;
+	float p=0;
+	
+	cout<<"Enter the name of student:- ";
+	cin>>n;
+	
+	cout<<"Enter the rollno\n:-";
+	cin>>r;
+	
+	cout<<"Enter the subject marks\n:- ";
+	cin>>a>>b>>c;
+	
+	m=a+b+c;
+	p=m/3;
+	
+	cout<<"Total marks:- \n"<<m;
+	cout<<"\nTotal percantage:- \n"<<p;
+}
+
+
+===========================================================================================
+
+Assignment No. 2
+
+Program 1.
+/*
+	Write a program to scan age of person bse on Major, Minor, Citizen
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	
+	int n;
+	cout<<"Enter the person age\n";
+	cin>>n;
+	
+	if(n<18){
+		cout<<"MINOR";
+	}
+	else if(18<=n && n<40){
+		cout<<"MAJOR";
+	}
+	else
+		cout<<"Senior Citizen";
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 2.
+
+/*
+	Write a program to print number
+	no. 1 to 250
+	no. 251 to 500
+	no. 501 to 750
+	otherwise print message not 1 to 750
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	
+	int n;
+	cout<<"Enter the number\n";
+	cin>>n;
+	
+	if(n>=1 && n<=250)
+		cout<<n<<" number lies between 1 to 250\n";
+	
+	else if(n>=251 && n<=500)
+		cout<<n<<" number lies between 251 to 500\n";
+		
+	else if(501<=n && n<=700)
+		cout<<n<<" number lies between 501 to 750\n";
+		
+	else
+		cout<<n<<" number does not lie between 1 to 750";
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 3.
+
+/*
+	Write a program to print the leap year
+	
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	
+	int n;
+	cout<<"Enter the Year to find out leap year\n";
+	cin>>n;
+	
+	if(n%4==0)
+		cout<<n<<" it is Leap year";
+	
+	else
+		cout<<n<<" it is not a Leap year";
+
+}
+
+===========================================================================================
+
+Assignment No. 3
+
+Program 1.
+
+/*
+	Write a program  to print 1 to 10 in word
+	a   = 2
+	o/p = two
+*/
+#include <iostream>
+using namespace std;
+main(){
+	int a;
+	cout<<"Enter the number\n";
+	cin>>a;
+	
+	switch(a)
+	{
+		
+		case 1:
+			cout<<a<<" = One";
+		break;
+		
+		case 2:
+			cout<<a<<" = Two";
+		break;
+		
+		case 3:
+			cout<<a<<" = Three";
+		break;
+		
+		case 4:
+			cout<<a<<" = Four";
+		break;
+		
+		case 5:
+			cout<<a<<" = Five";
+		break;
+		
+		case 6:
+			cout<<a<<" = Six";
+		break;
+		
+		case 7:
+			cout<<a<<" = Seven";
+		break;
+		
+		case 8:
+			cout<<a<<" = Eight";
+		break;
+		
+		case 9:
+			cout<<a<<" = Nine";
+		break;
+		
+		case 10:
+			cout<<a<<" = Ten";
+		break;
+		
+		default:
+			cout<<"Invalid choice!!!";
+	}
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 2.
+
+/*
+	Write a program  of menu driven by using symbol
+	+ = Addition
+	- = Subtraction
+	* = multiplication
+	/ = division
+*/
+#include <iostream>
+using namespace std;
+main(){
+	int a,b;
+	char ch;
+	cout<<"Enter the 2 number\n";
+	cin>>a>>b;
+	cout<<"Choice \n1.Addition \n2.Subtraction \n3.Multiplication \n4.Division";
+	cout<<"\nEnter the choice ";
+	cin>>ch;
+	
+	switch(ch)
+	{
+		
+		case '+':
+			cout<<"Addition :- "<<a+b;
+		break;
+		
+		case '-':
+			cout<<"Subtraction :- "<<a-b;
+		break;
+		
+		case '*':
+			cout<<"Multiplication :- "<<a*b;
+		break;
+		
+		case '/':
+			cout<<"Division :- "<<a/b;
+		break;
+		
+		default:
+			cout<<"Invalid choice!!!";
+	}
+}
+
+==================================================================================================
+
+Assignment No. 4
+
+Program 1.
+
+/*
+   Write a program to print the square 1 to 5 number
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	int n=1,sqr=1;
+	cout<<"Square of 1 to 5\n";
+	while(n<=5){
+		sqr=n*n;
+		cout<<"Square = "<<n<<" - "<<sqr<<endl; 
+		n++;
+	}
+	
+	
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 2.
+
+/*
+   Write a program scan number & print unit total place
+*/
+#include <iostream>
+using namespace std;
+main(){
+	
+	int n;
+	cout<<"Enter the number\n";
+	cin>>n;
+	cout<<n%10;
+	
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 3.
+
+/*
+   Write a program to print the leap year between 2000 to 2020
+*/
+#include <iostream>
+using namespace std;
+main(){
+	int n=2000;
+	while(n<=2020){
+		
+		if(n%4==0)	
+			cout<<n<<" is a Leap year\n";
+		n++;
+	}
+	
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Program 4.
+
+/*Write a program to print number is palindrome or not*/
+#include<iostream>
+using namespace std;
+main()
+{
+	int n,num,digit,rev=0;
+	cout<<"Enter a number to check whether it is palindrome or not: ";
+	cin>>num;
+	n=num;
+	do{
+		digit = num % 10;
+		rev = (rev * 10) + digit;
+		num = num / 10;
+	} while(num!=0);
+	
+	if(n==rev && n>0)
+	cout<<"\nThe number is palindrome.";
+	else
+	cout<<"\nThe number is not palindrome.";
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Program 5.
+
+/*
+Write a program which print all the leap year between 2000 to 2020
+*/
+#include<iostream>
+using namespace std;
+main()
+{
+	int a=0,b=1,fibo=1,n,sum=0;
+	cout<<"Enter the value of n: ";
+	cin>>n;
+	cout<<a;
+	cout<<"\n"<<b;
+	while(fibo<=n)
+	{
+		cout<<"\n"<<fibo;
+		a=b;
+		b=fibo;
+		sum=sum+fibo;
+		fibo=a+b;
+	//	sum=sum+fibo;
+
+	}
+	cout<<"\nSum of all fibonacci number is "<<sum+1;
+}
+
+Program6.
+
+/*
+Write a program take the for loop from 1 to 100 and print upto only seven number
+*/
+#include<iostream>
+using namespace std;
+main()
+{
+	int n=1;
+	while(n<=100)
+	{
+		if(n<=7)
+		cout<<n<<" ";
+		n++;
+	}
+}
