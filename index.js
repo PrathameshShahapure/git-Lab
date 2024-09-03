@@ -21,3 +21,6 @@ function mycode() {
   console.log("code", mycode);
 }
 
+const isAults = () => { 
+    console.log("Happy)!!");
+}
