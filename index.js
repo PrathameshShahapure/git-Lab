@@ -13,7 +13,11 @@ console.log('mycodeok');
 
 function mycode(code) {
     arguments[0] = code;
- }
+}
+ 
+function mycode(code) {
+    arguments[0] = mycodecode;
+}
 
 console.log('mycode', good);
  
