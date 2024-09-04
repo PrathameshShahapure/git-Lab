@@ -26,5 +26,5 @@ function mycode() {
 }
 
 const isAults = () => { 
-console.log("Happy)
+    console.log("Happy");
 }
